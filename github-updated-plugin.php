@@ -19,7 +19,6 @@ add_action('wp_head','hook_css');
 function hook_css() {
 
 	$output="<h1>Just Testing An Update.</h1>";
-
 	echo $output;
 
 }

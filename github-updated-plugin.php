@@ -10,22 +10,15 @@
 */
 
 //* Include the update functions
-include ('inc/updater.php');
-include ('inc/update-control.php');
+include ('/inc/updater.php');
+include ('/inc/update-control.php');
 
 //* Test to see if the plugin is working
 add_action('wp_head','hook_css');
 
 function hook_css() {
 
-	$output="<style>
-		#adminmenu, 
-		#adminmenu .wp-submenu, 
-		#adminmenuback, 
-		#adminmenuwrap {
-	    		background-color: #0e1318 !important;
-		} 
-	</style>";
+	$output="<h1>Just Testing An Update.</h1>";
 
 	echo $output;
 
